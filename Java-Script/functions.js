@@ -1,3 +1,5 @@
+console.log("----Function Starts-------")
+
 function addnums (a, b){
     var c = a + b;
 
@@ -6,16 +8,18 @@ function addnums (a, b){
 
 addnums (345, 67);
 // console.log(c);
+console.log("------------Average Function------------");
 
 const getAvg = function(m1,m2,m3){
     const avg = (m1+m2+m3)/3;
 
-    console.log(avg);
+    return(avg); //return uses here because it helps the function from call outside the fucnction                              //OR console.log(avg);
 }
 const res = getAvg(76,558,56)
-getAvg(76, 87, 98);
+console.log(res);
 
 
+console.log("-------Arrow Function--------");
 //Arrow Function--
 
 const fact = (n) => {
@@ -31,9 +35,11 @@ const fact = (n) => {
 const ans = fact(6);
 console.log(ans);
 
-//
 
-const oddnums = (start, end) => {
+console.log("------------Odd Nums-------------");
+//WAP to print Odd Nums 
+
+const oddNums = (start, end) => {
     for (let i = start; i<=end; i++ ){
         if(i%2 !== 0){
             console.log(i);
@@ -41,11 +47,11 @@ const oddnums = (start, end) => {
     }
 };
 
-oddnums(40, 90);
+oddNums(40, 90);
 
 
 
-console.log("fibbonaci series");
+console.log("------fibbonaci series----------");
 
 //fibbonaci series
 
